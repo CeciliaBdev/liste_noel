@@ -1,0 +1,93 @@
+body {
+    margin: 0; 
+    padding: 0;
+  }
+.page_content{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 30px;
+                                                
+}
+.liste_name{
+    display: flex;
+}
+.liste_name li{
+    margin: 10px;
+    list-style-type: none;
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.selected{
+    color:white;
+    background-color: black;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    text-align: center;
+}
+
+/* cards */
+.card{
+  width: 250px; 
+  height: 250px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.5s; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.card:hover {
+    transform: scale(1.05); 
+}
+.card li{
+    list-style-type: none;
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+}
+.card_reservation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:40px
+}
+.card_reservation a{
+    background-color: #6699CC;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color:white;
+    text-decoration: none;
+}
+.card_img{
+    object-fit: contain;
+    width:150px;
+    height:150px;
+}
+.card_reservation p{
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
